@@ -1,3 +1,5 @@
+import time
+
 def fib_while(n):
     i1 = 1; i2 = 1
     if n == 1 or n == 2:
@@ -29,6 +31,12 @@ def fib_DP(n):
 
 print("Num : ", end = '')
 num = int(input())
+start = time.time()
 print("fib_while : ", fib_while(num))
+print("{} sec".format(time.time()-start))
+start = time.time()
 print("fib_recursion : ", fib_recursion(num))
+print("{} sec".format(time.time()-start))
+start = time.time()
 print("fib_DP : ", fib_DP(num))
+print("{} sec".format(time.time()-start))
