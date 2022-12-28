@@ -6,3 +6,5 @@ def is_end():
 
 def put():
     pass
+
+count = 1
