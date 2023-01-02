@@ -12,9 +12,16 @@ def display():
 def is_end():
     pass
 
-def put():
-    pass
+def put(count):
+    color = "흑" if count % 2 == 1 else "백"
+    print("{}이 둘 곳 : ".format(color), end = "")
+    x, y = map(int, input().split())
+    L[y][x] = color
 
 count = 1
 L = [['  ' for i in range(16)] for _ in range(16)]
-display()
+while True:
+    put(count)
+    count += 1
+
+    display()
