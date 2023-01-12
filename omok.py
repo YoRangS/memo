@@ -19,7 +19,7 @@ def is_end():
                 continue
             for i in range(4):
                 if depth(dx[i], dy[i]):
-                    return true
+                    return True
             
 def depth(x, y):
     pass
